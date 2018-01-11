@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="example suite 1" verbose="1" parallel="classes" thread-count="1">
+    <listeners>
+        <listener class-name="extendreport.Listner.TestListener"/>
+        <listener class-name="extendreport.Listner.AnnotationTransformer"/>
+    </listeners>
+    <test name="Regression suite 1">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="jira" value="true"/>
+        <classes>
+            <class name="TC.login.LoginTC">
+                <methods>
+                    <include name="verfiyLoginInGmail_10000()"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
