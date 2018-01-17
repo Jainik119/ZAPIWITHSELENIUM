@@ -13,9 +13,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="Maven: zapi:zapi:1.0-SNAPSHOT">
+      <library name="Maven: zapi:zapi:1">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/Zapi-0.0.1-SNAPSHOT.jar!/" />
+          <root url="jar://src/main/resources/Zapi-1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
