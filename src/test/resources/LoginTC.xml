@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="example suite 1" verbose="1" parallel="classes" thread-count="1">
     <listeners>
-        <listener class-name="extendreport.Listner.TestListener"/>
-        <listener class-name="extendreport.Listner.AnnotationTransformer"/>
+        <listener class-name="org.jainik.report.TestListener"/>
+        <listener class-name="org.jainik.report.AnnotationTransformer"/>
     </listeners>
     <test name="Regression suite 1">
         <parameter name="browserName" value="chrome"/>
-        <parameter name="jira" value="true"/>
+        <parameter name="jira" value="false"/>
         <classes>
             <class name="TC.login.LoginTC">
                 <methods>

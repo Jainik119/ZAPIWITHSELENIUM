@@ -1,12 +1,11 @@
 package TC.login;
 
 import com.relevantcodes.extentreports.LogStatus;
-import extendreport.ExtentManager;
-import extendreport.ExtentTestManager;
 import login.LoginPO;
+import org.jainik.base.BaseTest;
+import org.jainik.report.ExtentTestManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import util.BaseTest;
 
 
 public class LoginTC extends BaseTest {
@@ -18,6 +17,7 @@ public class LoginTC extends BaseTest {
 
         //Step 1: Enter valid email id
         ExtentTestManager.getTest().log(LogStatus.PASS,"Open URL", "Gmail signin page should be open");
+
 
         //Step 2: Enter valid email id
 		Assert.assertTrue(loginPO.inputText(loginPO.usernameTextBoxID, "jgbakaraniya"), "Entered email id should not be accepted");
